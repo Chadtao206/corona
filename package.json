@@ -1,0 +1,35 @@
+{
+  "name": "corona",
+  "version": "1.0.0",
+  "description": "Everything Coronavirus",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "express": "latest",
+    "react": "latest"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chadtao206/corona.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chadtao206/corona/issues"
+  },
+  "homepage": "https://github.com/Chadtao206/corona#readme"
+}

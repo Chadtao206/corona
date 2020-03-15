@@ -1,0 +1,5 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Demo from './App';
+
+ReactDOM.render(<Demo />, document.querySelector('#root'));
