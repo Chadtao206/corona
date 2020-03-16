@@ -6,6 +6,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "express": "latest",
+    "if-env": "^1.0.4",
     "react": "latest"
   },
   "devDependencies": {
